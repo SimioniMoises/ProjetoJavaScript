@@ -1,0 +1,63 @@
+.titulo {
+  font-size: 28px;
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(248, 234, 209);
+  padding: 12px;
+}
+
+h2 {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin: 15px 0px 0px 15px;
+}
+
+.linha {
+  border: 1px solid gray;
+}
+
+table {
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.estilo {
+  margin: 3em auto;
+  width: 70%;
+  height: 30%;
+}
+td, th {
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+th {
+  background-color: rgb(250, 225, 182);
+  font-size: 20px;
+}
+
+td {
+  background-color: rgb(241, 237, 193);
+  height: 50px;
+  font-size: 20px;
+}
+
+body {
+  background-image: url("assets/fenda.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.siri{
+
+    background-image: url("assets/sandy.jpg");
+}
+
+.imagem{
+
+    height: 100%;
+}
