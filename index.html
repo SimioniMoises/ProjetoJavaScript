@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Projeto Bikini Bottom</title>
   </head>
@@ -24,63 +24,100 @@
             <th>Gordura Corporal(%)</th>
             <th>IMC</th>
           </tr>
-          <tr class="bob esponja">
+        </thead>
+        <tbody id="bodyintegrer">
+          <tr class="bobesponja">
             <td><img class="imagem" src="assets/sirigueijo.webp" /></td>
             <td class="info-nome">Sirigueijo</td>
-            <td class="info-peso">70</td>
-            <td class="info-altura">1.53</td>
+            <td class="infopeso">70</td>
+            <td class="infoaltura">1.50</td>
             <td class="info-gordura">2</td>
-            <td class="info-imc">0</td>
+            <td class="infoimc">0</td>
           </tr>
-          <tr class="bob esponja">
+          <tr class="bobesponja">
             <td><img class="imagem" src="assets/sandy.jpg" alt="" /></td>
             <td class="info-nome">Sandy</td>
-            <td class="info-peso">70</td>
-            <td class="info-altura">1.76</td>
+            <td class="infopeso">450</td>
+            <td class="infoaltura">9.10</td>
             <td class="info-gordura">11</td>
-            <td class="info-imc">0</td>
+            <td class="infoimc">0</td>
           </tr>
-          <tr class="bob esponja">
+          <tr class="bobesponja">
             <td><img class="imagem" src="assets/gary.png" alt="" /></td>
             <td class="info-nome">Gary</td>
-            <td class="info-peso">25</td>
-            <td class="info-altura">0.40</td>
+            <td class="infopeso">30</td>
+            <td class="infoaltura">1.60</td>
             <td class="info-gordura">8</td>
-            <td class="info-imc">0</td>
+            <td class="infoimc">0</td>
           </tr>
-          <tr class="bob esponja">
+          <tr class="bobesponja">
             <td><img class="imagem" src="assets/perola.jpg" alt="" /></td>
             <td class="info-nome">Pérola</td>
-            <td class="info-peso">80</td>
-            <td class="info-altura">1.82</td>
+            <td class="infopeso">80</td>
+            <td class="infoaltura">1.20</td>
             <td class="info-gordura">6</td>
-            <td class="info-imc">0</td>
+            <td class="infoimc">0</td>
           </tr>
-          <tr class="bob esponja">
+          <tr class="bobesponja">
             <td><img class="imagem" src="assets/Bob-Esponja.jpg" /></td>
             <td class="info-nome">Bob</td>
-            <td class="info-peso">47</td>
-            <td class="info-altura">1.40</td>
+            <td class="infopeso">50</td>
+            <td class="infoaltura">1.40</td>
             <td class="info-gordura">21</td>
-            <td class="info-imc">0</td>
+            <td class="infoimc">0</td>
           </tr>
-        </thead>
+        </tbody>
       </table>
     </section>
-    <script>
-      var titulo = document.querySelector("h2");
-      console.log(titulo.textContent);
-      titulo.textContent = "Senac";
-    </script>
-    <script>
-      var texto = document.querySelector("header");
-      console.log(texto.textContent);
-      texto.textContent = "Moises";
-    </script>
-    <script>
-      var linha = document.querySelector("th");
-      console.log(linha.textContent);
-      linha.textContent = "Simioni";
-    </script>
+    <main class="color">
+      <form id="form-adiciona">
+        <label for="Nome"> Nome: </label>
+        <input
+          class="input-padrao"
+          type="text"
+          id="Nome"
+          name="nome"
+          required
+          placeholder="Apenas primeiro nome"
+        />
+        <label for="Peso"> Peso: </label>
+        <input
+          class="input-padrao"
+          type="number"
+          id="Peso"
+          name="peso"
+          required
+        />
+        <label for="Altura"> Altura: </label>
+        <input
+          class="input-padrao"
+          type="number"
+          id="Altura"
+          name="altura"
+          required
+          placeholder="Altura em metros"
+        />
+        <label for="Gordura"> Gordura Corporal: </label>
+        <input
+          class="input-padrao"
+          type="number"
+          name="gordura"
+          id="Gordura"
+          required
+          placeholder="Indice de Gordura"
+        />
+        <!-- <label for="novidades"> Deseja ficar por dentro das novidades do site? </label>
+          <input class="checar" type="radio" id="novidades"> -->
+        <div>
+          <br />
+          <input class="button" type="submit" id="adicionar-integrante" />
+        </div>
+        <!-- 
+          <label for="cookies"> Aceita os cookies do site? </label>
+          <input class="checar" type="radio" id="cookies"> -->
+      </form>
+    </main>
+    <script src="./js/principal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
