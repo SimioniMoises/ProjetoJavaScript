@@ -17,7 +17,6 @@
       <table>
         <thead>
           <tr>
-            <th>Foto</th>
             <th>Nome</th>
             <th>Peso(Kg)</th>
             <th>Altura(m)</th>
@@ -27,40 +26,35 @@
         </thead>
         <tbody id="bodyintegrer">
           <tr class="bobesponja">
-            <td><img class="imagem" src="assets/sirigueijo.webp" /></td>
-            <td class="info-nome">Sirigueijo</td>
+            <td class="info-nome">Alice</td>
             <td class="infopeso">70</td>
             <td class="infoaltura">1.50</td>
             <td class="info-gordura">2</td>
             <td class="infoimc">0</td>
           </tr>
           <tr class="bobesponja">
-            <td><img class="imagem" src="assets/sandy.jpg" alt="" /></td>
-            <td class="info-nome">Sandy</td>
+            <td class="info-nome">Fernando</td>
             <td class="infopeso">450</td>
             <td class="infoaltura">9.10</td>
             <td class="info-gordura">11</td>
             <td class="infoimc">0</td>
           </tr>
           <tr class="bobesponja">
-            <td><img class="imagem" src="assets/gary.png" alt="" /></td>
-            <td class="info-nome">Gary</td>
+            <td class="info-nome">Breno</td>
             <td class="infopeso">30</td>
             <td class="infoaltura">1.60</td>
             <td class="info-gordura">8</td>
             <td class="infoimc">0</td>
           </tr>
           <tr class="bobesponja">
-            <td><img class="imagem" src="assets/perola.jpg" alt="" /></td>
-            <td class="info-nome">Pérola</td>
+            <td class="info-nome">Erik</td>
             <td class="infopeso">80</td>
             <td class="infoaltura">1.20</td>
             <td class="info-gordura">6</td>
             <td class="infoimc">0</td>
           </tr>
           <tr class="bobesponja">
-            <td><img class="imagem" src="assets/Bob-Esponja.jpg" /></td>
-            <td class="info-nome">Bob</td>
+            <td class="info-nome">Daniela</td>
             <td class="infopeso">50</td>
             <td class="infoaltura">1.40</td>
             <td class="info-gordura">21</td>
@@ -87,6 +81,7 @@
           id="Peso"
           name="peso"
           required
+          placeholder="Peso"
         />
         <label for="Altura"> Altura: </label>
         <input
@@ -104,7 +99,7 @@
           name="gordura"
           id="Gordura"
           required
-          placeholder="Indice de Gordura"
+          placeholder="Gordura"
         />
         <!-- <label for="novidades"> Deseja ficar por dentro das novidades do site? </label>
           <input class="checar" type="radio" id="novidades"> -->
@@ -117,7 +112,10 @@
           <input class="checar" type="radio" id="cookies"> -->
       </form>
     </main>
-    <script src="./js/principal.js"></script>
+    <div class= "erro">
+      erro na validacao
+    </div>
+    <script src="./js/calcula-imc.js"></script>
     <script src="./js/form.js"></script>
   </body>
 </html>
